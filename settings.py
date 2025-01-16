@@ -49,7 +49,7 @@ DEBUG = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [BASE_DIR, 'static']
 
 # Media files (Uploaded by users)
 MEDIA_URL = '/media/'
@@ -57,3 +57,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Use the default auto field setting
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+ROOT_URLCONF = 'pythonProject.urls'  # Replace 'pythonProject' with your project name if different
